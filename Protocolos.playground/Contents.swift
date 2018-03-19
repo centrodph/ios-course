@@ -6,7 +6,15 @@ protocol Volador{
     func volar()
     func volarEnReversa()
 }
-public class Persona{
+public class Persona: Comparable{
+    public static func <(lhs: Persona, rhs: Persona) -> Bool {
+        return lhs.getNombre().count < rhs.getNombre().count
+    }
+    
+    public static func ==(lhs: Persona, rhs: Persona) -> Bool {
+        return lhs.getNombre().count == rhs.getNombre().count
+    }
+    
     private var nombre: String
     
     init(nombre: String){
@@ -38,6 +46,15 @@ public class SuperHeroe: Persona, Volador{
 }
 
 var clark = SuperHeroe(nombre: "Clark Kent")
+var bruno = SuperHeroe(nombre: "Bruno diaz1")
 print(clark.presentarse())
 clark.volar()
+
+if clark == bruno {
+    print("SON LO MISMO")
+} else {
+    print("No SON LO MISMO")
+}
+
+
 
