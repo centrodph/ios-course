@@ -41,6 +41,14 @@ print(numerosDeTelefono["epale"])
 
 numerosDeTelefono.count
 
+
+//unwrappear
+var resultsuma = numerosDeTelefono["maria"]?.advanced(by: 10) ?? 10 //default es 10
+
+var resultsuma2 = numerosDeTelefono["maria"] ?? 10
+
+
+
 for i in numerosDeTelefono.keys {
     print(i)
 }
@@ -55,6 +63,10 @@ for (key,value) in numerosDeTelefono{
 
 var nombre : String
 var segundoNombre: String? = "fernando"
+var otroNombre : String?
+
+//imprimir el largo de un opcional
+print(otroNombre?.count)
 
 nombre = "andres"
 

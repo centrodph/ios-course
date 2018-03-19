@@ -2,4 +2,21 @@
 
 import UIKit
 
-var str = "Hello, playground"
+func s() -> String {
+    return "usuario"
+}
+
+func saludarOp(a nombre: String? = nil){
+    print(nombre ?? "nil")
+}
+
+func saludar(a nombre: String = s()){
+    print(nombre)
+}
+
+saludar(a: "pepe")
+saludar()
+
+saludarOp()
+
+
