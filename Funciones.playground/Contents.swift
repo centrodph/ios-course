@@ -29,7 +29,7 @@ print(result)
 
 // funcion de sumar numeros
 
-func sumarPares(entre a: Int, y b: Int) -> Int{
+func sumarPares(entre a: Int, y b: Int) -> Int {
     var suma = 0;
     for j in a...b{
         if j % 2 == 0 {
