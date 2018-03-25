@@ -10,5 +10,8 @@ https://developer.apple.com/library/content/referencelibrary/GettingStarted/Deve
 ## Swift Programming from Scratch
 
 . https://www.weheartswift.com/variables-constants-basic-operations/
+
 . https://www.raywenderlich.com/143771/swift-tutorial-part-1-expressions-variables-constants
+
 . https://www.hackingwithswift.com/read/0/overview
+
