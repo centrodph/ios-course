@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var theLabel: UILabel!
     
+    @IBOutlet weak var otherButton: UILabel!
     @IBAction func addTapped(_ sender: Any) {
         print("INSIDE \(Date())")
         
@@ -22,7 +23,12 @@ class ViewController: UIViewController {
         }
     }
     
-   
+    @IBAction func inputTextChange(_ sender: Any) {
+        if let name = textField.text {
+            otherButton.text = "value: \(name)"
+        }
+    }
+    
     @IBAction func addTappedOutside(_ sender: Any) {
         print("OUTSIDE \(Date())")
     }
