@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     
     @IBAction func addTapped(_ sender: Any) {
         print("INSIDE \(Date())")
+        
+        if let name = textField.text {
+            theLabel.text = name
+        }
     }
     
    
