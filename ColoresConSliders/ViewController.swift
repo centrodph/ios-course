@@ -14,7 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var gSlider: UISlider!
     @IBOutlet weak var bSlider: UISlider!
 
-
+    @IBAction func onChangenewSlider(_ sender: UISlider) {
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
