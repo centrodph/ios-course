@@ -10,6 +10,7 @@ import UIKit
 
 class GreenViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 

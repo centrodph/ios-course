@@ -17,6 +17,10 @@ class ViewController: UIViewController {
     @IBAction func changeToColor(_ sender: UIButton) {
         print(sender.backgroundColor!)
         view.backgroundColor = sender.backgroundColor;
+        var nextScreen = storyboard!.instantiateViewController(withIdentifier: "greenStoryID") as! GreenViewController
+        nextScreen.view.backgroundColor = sender.backgroundColor
+        nextScreen.label.text = sender.currentTitle
+        present(nextScreen, animated:true, completion: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -40,6 +44,7 @@ class ViewController: UIViewController {
         print("CAMBIAR A PAGINA VERDE 2")
         var nextScreen = storyboard!.instantiateViewController(withIdentifier: "greenStoryID")
         present(nextScreen, animated:true, completion: nil)
+        view.backgroundColor = UIColor.darkGray
     }
     
 }
