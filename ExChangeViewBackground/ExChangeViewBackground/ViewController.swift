@@ -48,5 +48,13 @@ class ViewController: UIViewController {
         present(nextScreen, animated:true, completion: nil)
         view.backgroundColor = UIColor.darkGray
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("SSSSSSSSS")
+        if let destination = segue.destination as? YellowViewController {
+            destination.text = "HOLAAAA DESDE SEGUE"
+        }
+        
+    }
 }
 
