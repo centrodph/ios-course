@@ -13,6 +13,7 @@
 		132DA238207B924500D70061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 132DA237207B924500D70061 /* Assets.xcassets */; };
 		132DA23B207B924500D70061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132DA239207B924500D70061 /* LaunchScreen.storyboard */; };
 		132DA243207B9B0300D70061 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132DA242207B9B0300D70061 /* GreenViewController.swift */; };
+		132DA245207BB28500D70061 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132DA244207BB28500D70061 /* YellowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		132DA23A207B924500D70061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		132DA23C207B924500D70061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		132DA242207B9B0300D70061 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		132DA244207BB28500D70061 /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				132DA239207B924500D70061 /* LaunchScreen.storyboard */,
 				132DA23C207B924500D70061 /* Info.plist */,
 				132DA242207B9B0300D70061 /* GreenViewController.swift */,
+				132DA244207BB28500D70061 /* YellowViewController.swift */,
 			);
 			path = ExChangeViewBackground;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132DA245207BB28500D70061 /* YellowViewController.swift in Sources */,
 				132DA243207B9B0300D70061 /* GreenViewController.swift in Sources */,
 				132DA233207B924500D70061 /* ViewController.swift in Sources */,
 				132DA231207B924500D70061 /* AppDelegate.swift in Sources */,

@@ -44,10 +44,9 @@ class ViewController: UIViewController {
 
     @IBAction func moveToGreenPage(_ sender: UIButton) {
         print("CAMBIAR A PAGINA VERDE 2")
-        var nextScreen = storyboard!.instantiateViewController(withIdentifier: "greenStoryID")
+        let nextScreen = storyboard!.instantiateViewController(withIdentifier: "greenStoryID")
         present(nextScreen, animated:true, completion: nil)
         view.backgroundColor = UIColor.darkGray
     }
-    
 }
 
