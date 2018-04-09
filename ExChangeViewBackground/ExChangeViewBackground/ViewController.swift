@@ -19,6 +19,13 @@ class ViewController: UIViewController {
         view.backgroundColor = sender.backgroundColor;
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        print("VA a desaparecer la pantalla de los botones!!!!!!")
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        print("VA a DESAPARECIOOO la pantalla de los botones!!!!!!")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
