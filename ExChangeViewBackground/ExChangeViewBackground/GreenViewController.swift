@@ -11,9 +11,13 @@ import UIKit
 class GreenViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
+    var myLabelText: String?
+    var myColor: UIColor?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(">>>>>>", myLabelText ?? " NO VINOOO")
+        label.text = myLabelText
+        view.backgroundColor = myColor
         // Do any additional setup after loading the view.
     }
     @IBAction func goBack(_ sender: UIButton) {

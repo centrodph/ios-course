@@ -18,8 +18,10 @@ class ViewController: UIViewController {
         print(sender.backgroundColor!)
         view.backgroundColor = sender.backgroundColor;
         var nextScreen = storyboard!.instantiateViewController(withIdentifier: "greenStoryID") as! GreenViewController
-        nextScreen.view.backgroundColor = sender.backgroundColor
-        nextScreen.label.text = sender.currentTitle
+        //nextScreen.view.backgroundColor = sender.backgroundColor  //NO HACER
+        //nextScreen.label.text = sender.currentTitle //NO HACER NO ACCEDER A OUTLETS DESDE OTRA VISTA
+        nextScreen.myColor = sender.backgroundColor
+        nextScreen.myLabelText = sender.currentTitle
         present(nextScreen, animated:true, completion: nil)
     }
     
