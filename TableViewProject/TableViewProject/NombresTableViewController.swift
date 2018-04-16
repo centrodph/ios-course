@@ -8,7 +8,18 @@
 
 import UIKit
 
-class NombresTableViewController: UITableViewController {
+
+protocol FavoriteManagerProtocol {
+    func actualizarFavorito()
+}
+
+class NombresTableViewController: UITableViewController, FavoriteManagerProtocol {
+    
+    
+    func actualizarFavorito() {
+        print("TABLA actualizarFavorito")
+    }
+    
 
     let misContactos = ["Romero", "Banegas", "Messi", "Palermo", "Riquelme", "Susana", "Cortazar", "Kasparov", "Sulma", "Charly", "Eva", "Puka", "Mora",
                         "Maradona", "Favarolo", "Nelson", "Orale", "Buey", "El2",
@@ -56,6 +67,7 @@ class NombresTableViewController: UITableViewController {
         cell.contactoLabel.text = misContactos[indexPath.row]
         cell.contactSwitch.isOn = false
         cell.contacto = misContactos[indexPath.row]
+        cell.favoriteDelegate = self
 //        if indexPath.row % 2 == 0 {
 //            cell.textLabel?.textColor = UIColor.brown
 //        } else {

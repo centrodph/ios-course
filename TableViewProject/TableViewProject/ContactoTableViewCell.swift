@@ -24,7 +24,7 @@ class ContactoTableViewCell: UITableViewCell {
         
         //NO USAR
         print("El usuario toco el SWITCH!!!! \(contacto)")
-        
+        favoriteDelegate?.actualizarFavorito()
     }
     
     
