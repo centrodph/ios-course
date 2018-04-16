@@ -123,13 +123,25 @@
         <!--View Controller-->
         <scene sceneID="biA-OM-E4l">
             <objects>
-                <viewController id="VEE-D7-qaG" sceneMemberID="viewController">
+                <viewController id="VEE-D7-qaG" customClass="ViewController" customModule="TableViewProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Co-jh-1VQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuX-Zc-4jq">
+                                <rect key="frame" x="38" y="166" width="268" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mFt-Fp-ttp"/>
                     </view>
+                    <connections>
+                        <outlet property="titulo" destination="xuX-Zc-4jq" id="k7x-rD-ywv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e04-Vc-35t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,8 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var titulo: UILabel!
+    var name: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        titulo.text = name
         // Do any additional setup after loading the view, typically from a nib.
     }
 

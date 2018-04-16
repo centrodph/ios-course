@@ -67,21 +67,16 @@ class NombresTableViewController: UITableViewController, FavoriteManagerProtocol
         
         print("la tabla pide una celda en fila \(indexPath.row) de la seccion \(indexPath.section)")
         // Configure the cell...
-//        cell.textLabel?.text = misContactos[indexPath.row]
         cell.contactoLabel.text = misContactos[indexPath.row]
         cell.contactSwitch.isOn = false
         cell.contacto = misContactos[indexPath.row]
         cell.favoriteDelegate = self
-//        if indexPath.row % 2 == 0 {
-//            cell.textLabel?.textColor = UIColor.brown
-//        } else {
-//            cell.textLabel?.textColor = UIColor.blue
-//        }
-        
-        
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("la tabla informa que se toco la celda \(indexPath.row) \(indexPath.section)")
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -118,14 +113,24 @@ class NombresTableViewController: UITableViewController, FavoriteManagerProtocol
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        print("PREPARE FOR SEGUEEE!!!!")
+        
+        if let destination = segue.destination as? ViewController{
+            
+            if let indexPath = tableView.indexPathForSelectedRow {
+                print("SEGUE DE LA CELDAAAA \(indexPath.row)")
+                let name = misContactos[indexPath.row]
+                destination.name = name
+            }
+        }
     }
-    */
+ 
 
 }
