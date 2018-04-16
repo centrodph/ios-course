@@ -10,6 +10,10 @@ import UIKit
 
 class NombresTableViewController: UITableViewController {
 
+    let misContactos = ["Romero", "Banegas", "Messi", "Palermo", "Riquelme", "Susana", "Cortazar", "Kasparov", "Sulma", "Charly", "Eva", "Puka", "Mora",
+                        "Maradona", "Favarolo", "Nelson", "Orale", "Buey", "El2",
+                        "Test Test", "Buey"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,27 +34,33 @@ class NombresTableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         print("pregunta por cuantas secciones")
-        return 5
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         print("pregunta por cantidad de filas en row")
-        return 15
+        return misContactos.count
     }
 
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "celdaAmarila", for: indexPath)
+        
+        //Casteo
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celdaAzul", for: indexPath) as! ContactoTableViewCell
+        
+        
         print("la tabla pide una celda en fila \(indexPath.row) de la seccion \(indexPath.section)")
         // Configure the cell...
-        cell.textLabel?.text = "Mi celda \(indexPath.row) , \(indexPath.section)"
-
-        if indexPath.row % 2 == 0 {
-            cell.textLabel?.textColor = UIColor.brown
-        } else {
-            cell.textLabel?.textColor = UIColor.blue
-        }
+//        cell.textLabel?.text = misContactos[indexPath.row]
+        cell.contactoLabel.text = misContactos[indexPath.row]
+        cell.contactSwitch.isOn = false
+        cell.contacto = misContactos[indexPath.row]
+//        if indexPath.row % 2 == 0 {
+//            cell.textLabel?.textColor = UIColor.brown
+//        } else {
+//            cell.textLabel?.textColor = UIColor.blue
+//        }
         
         
         return cell
