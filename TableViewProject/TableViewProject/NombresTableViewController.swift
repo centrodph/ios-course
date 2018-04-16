@@ -36,15 +36,23 @@ class NombresTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         print("pregunta por cantidad de filas en row")
-        return 0
+        return 15
     }
 
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celdaAmarila", for: indexPath)
         print("la tabla pide una celda en fila \(indexPath.row) de la seccion \(indexPath.section)")
         // Configure the cell...
+        cell.textLabel?.text = "Mi celda \(indexPath.row) , \(indexPath.section)"
 
+        if indexPath.row % 2 == 0 {
+            cell.textLabel?.textColor = UIColor.brown
+        } else {
+            cell.textLabel?.textColor = UIColor.blue
+        }
+        
+        
         return cell
     }
     
