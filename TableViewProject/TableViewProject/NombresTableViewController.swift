@@ -10,14 +10,18 @@ import UIKit
 
 
 protocol FavoriteManagerProtocol {
-    func actualizarFavorito()
+    func actualizarFavorito(from cell: UITableViewCell)
 }
 
 class NombresTableViewController: UITableViewController, FavoriteManagerProtocol {
     
     
-    func actualizarFavorito() {
+    func actualizarFavorito(from cell: UITableViewCell) {
         print("TABLA actualizarFavorito")
+        if let selectedIndexPath = tableView.indexPath(for: cell){
+            print(" ahora es favorito \(misContactos[selectedIndexPath.row])")
+        }
+        
     }
     
 
