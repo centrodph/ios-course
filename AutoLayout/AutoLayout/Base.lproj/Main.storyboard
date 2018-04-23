@@ -25,6 +25,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coddledpuppies_1280x720" translatesAutoresizingMaskIntoConstraints="NO" id="nPQ-nk-SGa">
+                                <rect key="frame" x="0.0" y="20" width="375" height="267"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDV-Zs-gKt">
                                 <rect key="frame" x="20" y="617" width="31" height="30"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -35,14 +38,19 @@
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Next"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coddledpuppies_1280x720" translatesAutoresizingMaskIntoConstraints="NO" id="nPQ-nk-SGa">
-                                <rect key="frame" x="0.0" y="20" width="375" height="267"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texto simulado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sl-FE-nsu">
+                                <rect key="frame" x="141" y="364" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nPQ-nk-SGa" secondAttribute="trailing" id="7ON-CI-8fI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HDV-Zs-gKt" secondAttribute="bottom" constant="20" id="8Wm-lI-cLD"/>
+                            <constraint firstItem="5sl-FE-nsu" firstAttribute="leading" secondItem="eOe-8n-sOO" secondAttribute="leading" id="DK0-J7-ekp"/>
+                            <constraint firstItem="5sl-FE-nsu" firstAttribute="top" secondItem="eOe-8n-sOO" secondAttribute="bottom" constant="20" id="Gez-UT-2T3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q0h-hO-wer" secondAttribute="bottom" constant="20" id="HYx-Qv-wg0"/>
                             <constraint firstItem="eOe-8n-sOO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hpe-BO-uhy"/>
                             <constraint firstItem="eOe-8n-sOO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kkd-qH-d95"/>
