@@ -15,3 +15,21 @@ https://developer.apple.com/library/content/referencelibrary/GettingStarted/Deve
 
 . https://www.hackingwithswift.com/read/0/overview
 
+
+
+
+## Integrate libraries
+
+
+. https://cocoapods.org/
+
+
+. https://github.com/matteocrippa/awesome-swift
+
+
+. https://github.com/Alamofire/Alamofire
+
+
+
+
+  
