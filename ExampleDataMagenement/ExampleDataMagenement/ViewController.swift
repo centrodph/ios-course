@@ -19,8 +19,21 @@ class ViewController: UIViewController {
         let url = URL(string: "https://www.nasa.gov/sites/default/files/1-bluemarble_west.jpg");
         //stheImageView.kf.setImage(with: url)
         theImageView.kf.setImage(with: url, placeholder: UIImage(named: "placeholder"), options: nil, progressBlock: nil, completionHandler: nil)
+        
+        //ejecuto el closure
+        //UIView.animate(withDuration: 3, animations: animacionDelaImagen)
+        
+        UIView.animate(withDuration: 3) {
+            self.theImageView.center.y += 100
+        }
+        
+        
     }
 
+    func animacionDelaImagen(){
+        theImageView.center.y += 100
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
