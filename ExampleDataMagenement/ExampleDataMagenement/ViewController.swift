@@ -16,8 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let url = URL(string: "https://andro4all.com/files/2017/04/Nonstop-Chuck-Norris-700x500.jpg");
-        theImageView.kf.setImage(with: url)
+        let url = URL(string: "https://www.nasa.gov/sites/default/files/1-bluemarble_west.jpg");
+        //stheImageView.kf.setImage(with: url)
+        theImageView.kf.setImage(with: url, placeholder: UIImage(named: "placeholder"), options: nil, progressBlock: nil, completionHandler: nil)
     }
 
     override func didReceiveMemoryWarning() {
