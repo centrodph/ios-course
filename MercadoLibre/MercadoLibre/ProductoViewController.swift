@@ -44,15 +44,14 @@ class ProductoViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath) as! ProductTableViewCell
 
         // Configure the cell...
         let product = products[indexPath.row]
         
-        cell.textLabel?.text = product.title
-        cell.detailTextLabel?.text = "\(product.currency)  \(product.price)"
-        let url = URL(string: product.thumbnail)
-        cell.imageView?.kf.setImage(with: url)
+        cell.setup(product: product)
+        
+
         return cell
     }
     
