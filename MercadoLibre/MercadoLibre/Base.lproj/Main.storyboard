@@ -31,6 +31,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
+                                    <action selector="buscarClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Jn-Z6-cvy"/>
                                     <segue destination="yVT-JM-2t1" kind="show" id="g0V-cP-uj7"/>
                                 </connections>
                             </button>
@@ -39,15 +40,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="fri-s9-FPV"/>
+                    <connections>
+                        <outlet property="textField" destination="Jya-Vy-NLM" id="nB9-vK-ari"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="456.80000000000001" y="117.39130434782609"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Producto View Controller-->
         <scene sceneID="FFs-9a-8b7">
             <objects>
-                <tableViewController id="yVT-JM-2t1" sceneMemberID="viewController">
+                <tableViewController id="yVT-JM-2t1" customClass="ProductoViewController" customModule="MercadoLibre" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UQ6-qQ-vrE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -38,8 +38,10 @@ https://developer.apple.com/library/content/referencelibrary/GettingStarted/Deve
 ## API exmaples
 
 
-https://api.chucknorris.io/
+. https://api.chucknorris.io/
 
+
+. PUBLIC APIS:  https://github.com/toddmotto/public-apis
 
 
 
