@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HttpRequest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7C-jP-3T3">
+                                <rect key="frame" x="142.5" y="40" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="XOc-xy-XWm"/>
+                                </constraints>
+                                <state key="normal" title="LOAD"/>
+                                <connections>
+                                    <action selector="LOAD:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YjB-Dq-DQj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tk2-we-1uy">
+                                <rect key="frame" x="20" y="320" width="339" height="27.5"/>
+                                <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="df6-3h-iXp">
+                                <rect key="frame" x="167.5" y="90" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="JvL-wG-cpq"/>
+                                    <constraint firstAttribute="height" constant="40" id="VEP-92-ihU"/>
+                                </constraints>
+                                <color key="color" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tk2-we-1uy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0RI-JP-p2s"/>
+                            <constraint firstItem="x7C-jP-3T3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="4c3-x6-ubY"/>
+                            <constraint firstItem="df6-3h-iXp" firstAttribute="top" secondItem="x7C-jP-3T3" secondAttribute="bottom" constant="20" id="5qR-GO-X0E"/>
+                            <constraint firstItem="x7C-jP-3T3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7mO-5y-K8N"/>
+                            <constraint firstItem="df6-3h-iXp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SgM-TE-A3x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tk2-we-1uy" secondAttribute="trailing" constant="16" id="m6g-XQ-AFK"/>
+                            <constraint firstItem="tk2-we-1uy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wt4-8j-bvE"/>
+                            <constraint firstItem="tk2-we-1uy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yJV-O0-UXG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="df6-3h-iXp" id="OII-gG-AF1"/>
+                        <outlet property="label" destination="tk2-we-1uy" id="n39-Tm-2zz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
