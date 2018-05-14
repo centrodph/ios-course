@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		14C827F7E404049198795A9F /* Pods_MercadoLibre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26A70CC33FF09D164B02E97 /* Pods_MercadoLibre.framework */; };
 		817E3E9320A9C9CD0069262D /* ProductoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817E3E9220A9C9CD0069262D /* ProductoViewController.swift */; };
+		817E3E9520A9D4B20069262D /* MercadoLibreApiDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817E3E9420A9D4B20069262D /* MercadoLibreApiDao.swift */; };
+		817E3E9720A9D5430069262D /* Producto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817E3E9620A9D5430069262D /* Producto.swift */; };
 		81EF209820A9C72B00BEE312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EF209720A9C72B00BEE312 /* AppDelegate.swift */; };
 		81EF209A20A9C72B00BEE312 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EF209920A9C72B00BEE312 /* ViewController.swift */; };
 		81EF209D20A9C72B00BEE312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81EF209B20A9C72B00BEE312 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		0C7543D6B71AA443D7AFEF6F /* Pods-MercadoLibre.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoLibre.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MercadoLibre/Pods-MercadoLibre.debug.xcconfig"; sourceTree = "<group>"; };
 		817E3E9220A9C9CD0069262D /* ProductoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoViewController.swift; sourceTree = "<group>"; };
+		817E3E9420A9D4B20069262D /* MercadoLibreApiDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoLibreApiDao.swift; sourceTree = "<group>"; };
+		817E3E9620A9D5430069262D /* Producto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Producto.swift; sourceTree = "<group>"; };
 		81EF209420A9C72B00BEE312 /* MercadoLibre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoLibre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81EF209720A9C72B00BEE312 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81EF209920A9C72B00BEE312 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				81EF20A020A9C72B00BEE312 /* LaunchScreen.storyboard */,
 				81EF20A320A9C72B00BEE312 /* Info.plist */,
 				817E3E9220A9C9CD0069262D /* ProductoViewController.swift */,
+				817E3E9420A9D4B20069262D /* MercadoLibreApiDao.swift */,
+				817E3E9620A9D5430069262D /* Producto.swift */,
 			);
 			path = MercadoLibre;
 			sourceTree = "<group>";
@@ -208,6 +214,8 @@
 			files = (
 				81EF209A20A9C72B00BEE312 /* ViewController.swift in Sources */,
 				817E3E9320A9C9CD0069262D /* ProductoViewController.swift in Sources */,
+				817E3E9720A9D5430069262D /* Producto.swift in Sources */,
+				817E3E9520A9D4B20069262D /* MercadoLibreApiDao.swift in Sources */,
 				81EF209820A9C72B00BEE312 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
